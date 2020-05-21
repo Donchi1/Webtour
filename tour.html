@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Tourism">
+    <meta name="autor" content="Donchi1">
+    <title>Tourweb</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share&display=swap" rel="stylesheet">
+    <link href="tour.css" rel="stylesheet">
+</head>
+<body>
+    <!------- header ------>
+    <header class="container">
+        <head>
+            <h1 id="tittle">Tourweb</h1>
+        </head>
+        <ul class="nav">
+            <li class="nav-links"><a href="#">about</a></li>
+            <li class="nav-links"><a href="#">hottours</a></li>
+            <li class="nav-links"><a href="#">specialoffers</a></li>
+            <li class="nav-links"><a href="#">blogs</a></li>
+            <li class="nav-links"><a href="#">contacts</a></li>
+            <li>
+            <button type="button" class="book-btn nav-links">register</button>
+           </li>
+        </ul>
+            
+                <div class="togglemenu">
+                    <div class="list1"></div>
+                    <div class="list2"></div>
+                    <div class="list3"></div>
+                </div>
+            </header>
+            <!----X---- header----X---->
+            
+<main class="general-info">
+     <section class="general1">
+           <form name="myreg" action="/files" method="POST">
+            <span id="close-bar">&times;</span>
+            <h1 class="reg-heading">Register plus booking equal to enjoyment</h1>
+            <label for="name">Enter name:</label>
+            <input type="text" name="name" placeholder="fullname" required >
+
+            <label for="email">Enter email:</label>
+            <input type="email" name="email" placeholder="email" required><br>
+
+            <label for="country">country:</label>
+            <input type="text" name="country" placeholder="country" required>
+
+            <label for="hotel">Enter hotel:</label>
+            <input type="text" name="hotel" placeholder="hotel" required>
+
+        <div>
+            <label for="checkin">check-in:</label>
+            <input type="date" name="checkin" id="checkin" placeholder="14/05/2020">
+        </div>
+        <div>
+            <label for="checkout" >check-out:</label>
+            <input type="date" name="checkout" id="checkout" placeholder="25/05/2020">
+        </div>
+
+    <div class="conforts">
+        <p>conforts:</p>
+        <input type="radio" name="confort">
+        <span>cheap</span>
+        <input type="radio" name="confort">
+        <span>standard</span>
+        <input type="radio" name="confort">
+        <span>lux</span>
+    </div>
+    
+    <div class="adult">  
+        <em>adult</em>
+        <select name="adult" id="adult">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    </div>
+
+    <div class="child">
+        <em>children</em>
+        <select name="children" id="children">
+          <option >0</option>
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+        </select>
+    </div>
+    <div class="rooms">
+        <em>room</em>
+        <select name="room" id="room">
+            <option >1</option>
+            <option >1</option>
+            <option >2</option>
+            <option >3</option>
+        </select>
+    </div>
+
+   <div class="txt-area">
+        <textarea name="message" id="message" placeholder="message..." minlength="20" maxlength="99999" cols="30" rows="20" required></textarea>
+    </div>
+
+        <button type="submit" class="submit-btn">submit</button>
+        <button type="submit" class="cancel-btn">cancel</button>
+    </form>
+</section>
+
+<!---- slider ------>
+<section class="slide-container">
+
+    <div class="slide content1" >
+        <img src="/images/slide.jpg" alt="london">
+
+      <div class="all-location">
+           <h1 class="location my1">London</h1>
+           <p class="each my2">from</p>
+           <h3 class="price my3" >$3000</h3>
+           <a href="#" class="my4">learn more</a>
+        </div>
+    </div>
+    
+    <div class="slide content2">
+        <img src="/images/slide1.jpg" alt="canada">
+        <div class="all-location">
+            <h1 class="location my1">canada</h1>
+            <p class="each my2">from</p>
+            <h3 class="price my3">$8000</h3>
+            <a href="#"class="my4">learn more</a>
+        </div>
+    </div>
+    
+    <div class="slide content3">
+        <img src="/images/slide2.jpg" alt="us">
+        <div class="all-location">  
+            <h1 class="location my1">newyork</h1>
+            <p class="each my2" >from</p>
+            <h3 class="price my3">$9000</h3>
+            <a href="#" class="my4">learn more</a>
+      </div>
+      
+    </div>
+    <a class="next-btn">&#10095;</a>
+    <a class="prev-btn">&#10094;</a>
+    
+</section>
+<!------X----slider ----X------>
+<div class="search-tour">
+        <h2>search destination</h2>
+     
+        <input type="text" name="txt" placeholder="search.." class="search">
+        <button type="button" class="search-btn"><i class="fa fa-search"></i></button >
+    
+</div>
+ <div class="search-container">
+     <h1>golden destinations</h1>
+     <span class="close-search">&times;</span>
+      <div class="search-content"></div>
+      <button class="close-search-btn">cancel</button>
+ </div>
+
+   <section>
+
+    <div class="feature-head" data-aos="fade-down" data-aos-once="true" 
+     data-aos-easing="linear" data-aos-duration="1500">
+       <h2>features</h2>
+    </div>
+
+    <div class="feature-container">
+       <div class="feature" data-aos="fade-right" data-aos-once="true" 
+        data-aos-easing="linear" data-aos-duration="1500">
+           <i class="fa fa-hotel"></i>
+           <h3>rights</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro,
+                rem doloremque, cumque tenetur excepturi odit error unde vero harum ad,
+                est repudiandae sed! Vero blanditiis officia temporibus facere ab?
+            </p>
+       </div>
+    
+    
+       <div class="feature" data-aos="fade-up" data-aos-once="true" 
+        data-aos-easing="linear" data-aos-duration="1500">
+           <i class="fa fa-plane"></i>
+           <h3>movements</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro,
+                rem doloremque, cumque tenetur excepturi odit error unde vero harum ad,
+                est repudiandae sed! Vero blanditiis officia temporibus facere ab?
+            </p>
+       </div>
+    
+    
+       <div class="feature" data-aos="fade-down" data-aos-easing="linear" 
+       data-aos-once="true"  data-aos-duration="1500">
+           <i class="fa fa-ship"></i>
+           <h3>acknoledgement</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro,
+                rem doloremque,
+                est repudiandae sed! Vero blanditiis officia temporibus facere ab?
+            </p>
+    </div>
+    
+       <div class="feature" data-aos="fade-left" data-aos-once="true" 
+        data-aos-easing="linear" data-aos-duration="1500">
+           <i class="fa fa-car"></i>
+           <h3>empowernment</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro,
+                rem doloremque, cumque tenetur excepturi odit error unde vero harum ad,
+                est repudiandae sed!
+            </p>
+       </div>
+    </div>
+
+   </section>
+
+   <section >
+     <div class="offer-container">
+       <div class="offer-head" data-aos="fade-down" data-aos-once="true" 
+       data-aos-easing="linear" data-aos-duration="1500">
+       <h1>our latest offer</h1>
+       </div>
+
+    <div class="latest-offer">
+
+       <div class="offer-info" data-aos="fade-right" data-aos-easing="linear"
+        data-aos-once="true" data-aos-duration="1500">
+       <img src="/images/paris.jpg" alt="paris">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+             Reiciendis esse officia obcaecati cum quam cupiditate, 
+             doloribus neque eveniet ipsum et!</p>
+             
+             <div>
+                <button type="button">see detail</button>
+               </div>
+    </div>
+       <div class="offer-info" data-aos="fade-down" data-aos-easing="liear" 
+       data-aos-once="true" data-aos-duration="1500">
+          
+       <img src="/images/paris1.jpg" alt="paris">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+             Reiciendis esse officia obcaecati cum quam cupiditate, 
+             doloribus neque eveniet ipsum et!</p>
+             
+             <div>
+                <button type="button">see detail</button>
+               </div>
+    </div>
+       <div class="offer-info" data-aos="fade-left" data-aos-once="true" 
+        data-aos-easing="linear"  data-aos-duration="1500">
+       <img src="/images/paris2.jpg" alt="paris">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+             Reiciendis esse officia obcaecati cum quam cupiditate, 
+             doloribus neque eveniet ipsum et!</p>
+            
+             <div>
+             <button type="button">see detail</button>
+            </div>
+    </div>
+
+       <div class="offer-info" data-aos="fade-up" data-aos-once="true" 
+        data-aos-easing="linear"  data-aos-duration="1500">
+          <img src="/images/paris3.jpg" alt="">
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+             Reiciendis esse officia obcaecati cum quam cupiditate, 
+             doloribus neque eveniet ipsum et!</p>
+
+             <div>
+                <button type="button">see detail</button>
+               </div>
+         </div>   
+ </div>
+</div>
+</section>
+
+   <section>
+       <div class="testimony-head">
+       <h3 data-aos-easing="linear" data-aos="fade-down"
+        data-aos-once="true" data-aos-duration="1500">testimonials</h3>
+    </div>
+
+       <div class="testimony-content">
+       <div class="testimony" data-aos-easing="linear-in-sin" data-aos-once="true" 
+        data-aos-duration="1500" data-aos="fade-left">
+           <img src="/testimony/person-1.jpg" alt="lady">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+             Nulla ea quam temporibus perferendis incidunt reiciendis.
+            </p>
+            <strong>Alenxanda Nee</strong>
+            <em>Doctor</em>
+       </div>
+
+       <div class="testimony" data-aos-easing="linear-in-sin" data-aos-once="true"
+         data-aos-duration="1500" data-aos="fade-left">
+           <img src="/testimony/person-2.jpg" alt="man">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+             Nulla ea quam temporibus perferendis incidunt reiciendis.
+            </p>
+            <strong>kelvin Elvis</strong>
+            <em>Teacher</em>
+       </div>
+
+       <div class="testimony" data-aos-easing="linear-in-sin" 
+       data-aos-duration="1500" data-aos="fade-right"data-aos-once="true" >
+           <img src="/testimony/person-3.jpg" alt="artist">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+             Nulla ea quam temporibus perferendis incidunt reiciendis.
+            </p>
+            <strong>Jorge Clem</strong>
+            <em>Artist</em>
+       </div>
+
+       <div class="testimony" data-aos-easing="linear-in-sin"
+        data-aos-duration="1500" data-aos="fade-right" data-aos-once="true">
+           <img src="/testimony/person-4.jpg" alt="receptionist">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+             Nulla ea quam temporibus perferendis incidunt reiciendis.
+            </p>
+            <strong>loice Kings</strong>
+            <em>Receptionist</em>
+       </div>
+    </div>
+</section>
+
+</main>
+
+ <footer class="about-us">
+ <section>
+    <div class="footer-top-container">
+      <div class="footer-top">
+           <h2>about-us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas saepe, 
+                corrupti placeat aut in nulla magni nemo dignissimos perferendis
+                Lorem ipsum dolor sit amet. 
+            </p>
+    </div>
+    <div class="footer-top">
+        <h2>helpful links</h2>
+          <a href="#"><span>-</span>Lorem ipsum.</a><br>
+          <a href="#"><span>-</span>Lorem ipsum.</a><br>
+          <a href="#"><span>-</span>Lorem ipsum.</a><br>
+          <a href="#"><span>-</span>Lorem ipsum.</a>
+    </div>
+    <div class="footer-top">
+        <h2>companies</h2>
+         <p>mecofar int</p>
+         <p>world tour int</p>
+         <p>webtour int</p>
+    </div>
+    <div class="footer-top">
+        <h2>costomer service</h2>
+        <img src="/testimony/footer-customer-service.jpg" alt="service">
+        <p> corrupti placeat</p>
+        <p> corrupti placeat</p>
+        <p> corrupti placeat</p>
+        <p>+1 421 458 321</p>
+        <em>www.webtour@yahoomail.com</em>
+    </div>
+</div>
+</section>
+
+<div class="footer-bottom-cont">
+    
+    <div class="footer-tittle">
+        
+        
+        <h2>Tourweb</h2>
+    </div>
+    
+    <div class="email">
+        <a href="https://goo.gl/maps/oQKxg"><i class="fa fa-map-marker"></i>"no 674 avenu canada</a>
+        <a href="+1 344 5345 534"><i class="fa fa-phone"></i> +1 344 5345 5345</a>
+        <a href="mikkyonuma@gmail.com"><i class="fa fa-envelope"></i>webtour@yahoomail.com</a>
+    </div>
+    
+    <div class="social-links">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+    </div>
+</div>
+          <div class="copyrite">
+              <p>Copyright 2015 webtour, Designed by Donchi1, All right reserved</p>
+          </div>
+          <a href="#" class="to-top" title="Go to top"><i class="fa fa-angle-up"></i></a>
+   </footer>
+
+   
+
+
+
+   
+   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="tour.js"></script>
+</body>
+</html>
