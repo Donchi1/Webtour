@@ -127,7 +127,9 @@ fetch("https://api.unsplash.com/search/photos?client_id="+APIKey+"&query="+searc
               return searchInfo += `<img src="${each.urls.raw}">`
                })
               div.innerHTML = searchInfo;
+             
               search.style.display = "block"
+              
          });
       })
       document.querySelector(".close-search").addEventListener("click", () => {

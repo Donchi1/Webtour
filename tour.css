@@ -335,20 +335,20 @@ text-transform: capitalize;
     color: rgb(252, 144, 20);
     font-family: serif;
     text-transform: uppercase;
-    animation: display-anim 2s ease-in;
+    animation: display-anim 1.2s ease-in;
 }
 .slide .each{
     color: white;
     font-size: 3rem;
     text-transform: uppercase;
-    animation: price1-anim 2s ease-in;
+    animation: price1-anim 1.2s ease-in;
     
 }
 .slide .price{
 color:rgb(252, 144, 20);
 font-size: 5rem;
 font-weight: 500;
-animation: price2-anim 2s ease-in;
+animation: price2-anim 1.2s ease-in;
 }
 
 .slide a{
@@ -364,7 +364,7 @@ animation: price2-anim 2s ease-in;
     text-align: center;
     margin-top: 2rem;
     transition: 0.5s;
-    animation: learn-btn-anim 2s ease-in;
+    animation: learn-btn-anim 1.2s ease-in;
 }
 .slide a:hover{
  background-color: rgb(53, 95, 112);
@@ -396,19 +396,21 @@ animation: price2-anim 2s ease-in;
     border-bottom: none;
     width: 60%;
     transition: 0.5s;
-    transform: translateX(1%);
-   }
-   .search-btn{
-       background-color:rgb(250, 149, 16);
-       padding: 2rem;
-       border: 0.1rem solid rgb(244, 252, 141);
-       border-left: none; 
-       cursor: pointer;
-       color: rgb(104, 100, 100);
-       font-size: 1.5rem;
-       transition: 0.5s;
-      
-   }
+    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0 ,0.7);
+    
+}
+.search-btn{
+    background-color:rgb(250, 149, 16);
+    padding: 2rem;
+    border: 0.1rem solid rgb(244, 252, 141);
+    border-left: none; 
+    cursor: pointer;
+    color: rgb(104, 100, 100);
+    font-size: 1.5rem;
+    transition: 0.5s;
+    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0 ,0.7);
+    outline: none;
+    }
    .search-btn:hover{
     background-color: rgb(253, 85, 7);
     color: white;
@@ -605,6 +607,7 @@ animation: price2-anim 2s ease-in;
 /*--X---offers--X--*/
 
 /*---- testimony----*/
+
 .testimony-head h3{
     font-size: 3rem;
     color: rgb(236, 158, 12);
@@ -745,7 +748,7 @@ animation: price2-anim 2s ease-in;
  @media screen and (max-width: 85rem){
      
      .search-content{
-         display: grid;
+       display: grid;
        grid-template-columns: 1fr 1fr;
        width: 100%;
        
@@ -796,6 +799,12 @@ animation: price2-anim 2s ease-in;
     }
      
 @media screen and (max-width: 70rem){
+    .search{
+        width: 70%;
+    }
+    .search-btn{
+        width: 10%;
+    }
     .feature-container{
         display: grid;
         grid-template-columns: 1fr;
@@ -817,6 +826,9 @@ animation: price2-anim 2s ease-in;
        width: 40rem;
    
    }
+   .testimony{
+    border-bottom: 1px solid rgb(146, 142, 142);
+  }
    .testimony-content{
        display: grid;
        grid-template-columns: 1fr;
